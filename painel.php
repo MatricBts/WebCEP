@@ -111,10 +111,9 @@ include('verifica_login.php');
                           
         <input name="ne" type="text" class="input is-large" placeholder="Nome da Empresa" autofocus>
         <input name="cnpj" type="text" class="input is-large" placeholder="CNPJ">
-        <input name="tel" class="input is-large" type="password" placeholder="Telefone"><br>
-        <input name="nr" class="input is-large" type="password" placeholder="Nome do Responsavél"><br>
-        <input name="email" class="input is-large" type="password" placeholder="Email"><br>
- 
+        <input name="tel" class="input is-large" type="text" placeholder="Telefone"><br>
+        <input name="nr" class="input is-large" type="text" placeholder="Nome do Responsavél"><br>
+        <input name="email" class="input is-large" type="text" placeholder="Email"><br>
         <input name="cep" class="input is-large" type="text" id="cep" placeholder="CEP" value="" size="10" maxlength="9"
             onblur="pesquisacep(this.value);" /><br> 
         <input name="rua" class="input is-large" type="text" id="rua" placeholder="Rua" /></label>
