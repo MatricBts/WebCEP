@@ -45,11 +45,8 @@ session_start();
                                     <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
                                 </div>
                             </div>
-
-                            <div class="field">
-                                <a href="cadastro.php">Cadastrar</a>
-                            </div>
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button><br>
+                            <a href="cadastro.php">Cadastrar</a>
                         </form>
                     </div>
                 </div>

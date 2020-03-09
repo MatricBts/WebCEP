@@ -3,8 +3,6 @@ session_start();
 include('verifica_login.php');
 ?>
 
-<center><h1>BEM VINDO,   <?php echo $_SESSION['nome'];?></h1>
-    <h2><a href="logout.php" >Sair</a></h2></center><br>
 
 <html >
 <head>
@@ -14,6 +12,7 @@ include('verifica_login.php');
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">   
+    <link rel="stylesheet" type="text/css" href="css/meni.css">   
 </head>
 
 <body>
@@ -90,8 +89,25 @@ include('verifica_login.php');
 
     </script>
 <meta charset="utf-8">
+    <div class="menu-container">
+        <ul class="menu clearfix">
+            <li><a href="painel.php">Cadastro</a></li> 
+            <li><a href="tabela.php">Clientes</a></li>        
+            <li><h2><a href="logout.php" >Sair</a></h2></center></li>
+        </ul>
+    
+<center><h1>BEM VINDO,   <?php echo $_SESSION['nome'];?></h1>
+    
+</div>
+
 <h2>Cadastrar cliente</h2>
-    <form action="processa.php" method="POST">
+    
+
+
+
+<!-- FORMULARIO -->
+
+<form action="processa.php" method="POST">
                           
         <input name="ne" type="text" class="input is-large" placeholder="Nome da Empresa" autofocus>
         <input name="cnpj" type="text" class="input is-large" placeholder="CNPJ">

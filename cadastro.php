@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button><br>
-                            <h2><a href="logout.php" >Voltar</a></h2></center><br>
+                            <h2><a href="index.php" >Voltar</a></h2></center><br>
                         </form>
                     </div>
                 </div>

@@ -2,6 +2,8 @@
 session_start();
 include("conexao.php");
 
+// Busca os formulario e trasforma em variaveis php
+
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $usuario = mysqli_real_escape_string($conexao, trim($_POST['usuario']));
 $senha = mysqli_real_escape_string($conexao, trim(md5($_POST['senha'])));
@@ -16,6 +18,8 @@ if($row['total'] == 1) {
 	header('Location: cadastro.php');
 	exit;
 }
+
+// insere no banco
 
 $sql = "INSERT INTO usuario (nome, usuario, senha, data_cadastro) VALUES ('$nome', '$usuario', '$senha', NOW())";
 

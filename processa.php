@@ -1,8 +1,6 @@
 <?php
 	include_once("conexao3.php");
-	
-	
-        
+  
         $ne = mysqli_real_escape_string($conn, $_POST['ne']);
         $cnpj = mysqli_real_escape_string($conn, $_POST['cnpj']);
         $tel = mysqli_real_escape_string($conn, $_POST['tel']);
@@ -44,4 +42,9 @@
 		'$estado',  
 		NOW())";
 		$resultado_usuario = mysqli_query($conn, $result_usuario); 
-?>
+
+                
+
+header('Location: painel.php');
+exit; 
+                ?>
